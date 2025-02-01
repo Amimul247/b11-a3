@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature's platter</title>
+
+
+                <!-- daisyUI CDN  -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>          
+    
+
+    <!-- google fonts  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap" rel="stylesheet">
+
+
+    <!-- font awesame cdn  -->
+    <script src="https://kit.fontawesome.com/b0fd2c34e8.js" crossorigin="anonymous"></script>
+
+
+    <!-- Play CDN script to your HTML -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          FontFamily: {
+            sora: ['Sora', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+
+
+<style>
+  .font-sora{
+    font-family: "Sora", serif;
+  }
+</style>
+
+
+</head>
+<body class="sora max-w-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto">
+                        <!-- header section styles -->
+    <header class="sora max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto  bg-gradient-to-t to-[#ffffff] from-[#EFEBE3] ">
+                          <!-- navbar section styles  -->
+          <nav class=" border-2 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto border-[#179800]">
+            <div class="navbar bg-base-100">
+<!-- navbar-header-logo-lg -->
+              <div class="navbar-start hidden md:flex">
+                <img src="image/logo-header.png" alt="logo-header">
+              </div>
+                        <!-- navbar-header-logo-sm -->
+              <div class="navbar-start md:hidden">
+                <img src="image/logo-footer.png" alt="logo-footer">
+              </div>
+
+<!-- navbar center -->
+              <div class="navbar-center hidden xl:flex">
+                <ul class="menu menu-horizontal px-1 text-xl">
+                  <li><a>Product</a></li>
+                  <li><a>Service</a></li>
+                  <li><a>Content us</a></li>
+                </ul>
+              </div>
+
+<!-- Navbar end  -->
+              <div class="navbar-end gap-4">
+                    <!-- search icons -->
+                <button class="btn btn-ghost btn-circle hidden md:flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+                      <!-- cart icon  -->
+                <div class="indicator hidden sm:flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  <span class="badge badge-sm indicator-item">5</span>
+                </div>
+                    <!-- login and Register button  -->
+                <a class="btn border-2 text-black text-xl font-normal h-10 w-32 bg-white border-[#179800] hidden lg:flex">Login</a>
+                <a class="btn rounded-lg text-white text-xl font-normal h-11 w-36 bg-[#179800] hidden lg:flex">Register</a>      
+
+                      <!-- Navbar manu button  -->
+                <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block h-10 w-10 stroke-current">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Products</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>content us</a></li>
+                </ul>
+                </div>
+                </div>
+              </div>
+          </nav>
+
+ <!-- banner section styles  -->
+          <section class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto ">
+            
+            <!-- banner title design -->
+            <div class="mt-10 mb-5 md:mt-24 md:mb-9 text-center">
+              <h2 class=" font-semibold text-2xl mb-8 md:font-bold md:text-4xl lg:font-extrabold lg:text-5xl">
+                <span class="">Freshness</span>
+                <span class="text-green-500">You Can</span>
+                <br>
+                <span class="text-green-500">Count </span>
+                <span class="">On, Prices You’ll Love!</span></h2>
+              <p class="font-normal text-base md:font-normal md:text-xl">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry 
+                <br>staples, we’ve got you covered every day! </p>
+            </div>
+
+             <!-- banner animation section  -->
+            <div class="carousel relative w-full mx-auto rounded-2xl">
+
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="image/hero-vegetables.png" class="w-full"/>
+                <div class="absolute flex gap-4 transform -translate-y-1/2 left-10 bottom-5">
+                  <a href="#slide4" class="btn btn-circle bg-black text-white font-bold text-2xl">❮</a> 
+                  <a href="#slide2" class="btn btn-circle bg-black text-white font-bold text-2xl">❯</a>
+                </div>
+              </div>
+
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="Image/hero-vegetables.png" class="w-full" />
+                <div class="absolute flex gap-4 transform -translate-y-1/2 left-10 bottom-5">
+                  <a href="#slide1" class="btn btn-circle bg-black text-white font-bold text-2xl">❮</a> 
+                  <a href="#slide3" class="btn btn-circle bg-black text-white font-bold text-2xl">❯</a>
+                </div>
+              </div>
+
+              <div id="slide3" class="carousel-item relative w-full">
+                <img src="Image/hero-vegetables.png" class="w-full" />
+                <div class="absolute flex gap-4 transform -translate-y-5 left-10 bottom-5">
+                  <a href="#slide2" class="btn btn-circle bg-black text-white font-bold text-2xl">❮</a> 
+                  <a href="#slide4" class="btn btn-circle bg-black text-white font-bold text-2xl">❯</a>
+                </div>
+              </div>
+
+              <div id="slide4" class="carousel-item relative w-full">
+                <img src="Image/hero-vegetables.png" class="w-full" />
+                <div class="absolute flex gap-4 transform -translate-y-5 left-10 bottom-5">
+                  <a href="#slide3" class="btn btn-circle bg-black text-white font-bold text-2xl">❮</a> 
+                  <a href="#slide1" class="btn btn-circle bg-black text-white font-bold text-2xl">❯</a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+    </header>
+
+
+ <!-- Main section styles -->
+   <main class="font-sora max-w-screen-2xl mx-auto">
+
+  <!-- Services -->
+    <section class="sora max-w-sm md:max-w-screen-md lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl mx-auto ">
+      <!-- Services title  -->
+      <h2 class="font-semibold text-2xl mt-4 mb-3 md:text-4xl text-left text-[#179800] md:mt-8 md:mb-5">Services</h2>
+
+            <!-- Services card  -->
+      <div class="md:flex md:justify-between gap-6 mx-1 my-10 mb-24">
+        <div class="md:w-1/3 bg-[#EFEBE3] rounded-2xl py-8">
+          <div class="h-52 w-52 justify-self-center bg-white pt-6 rounded-full">
+          <img class="justify-self-center items-center h-40 w-40" src="image/service.png" alt="service">
+          </div>
+          <h4 class="text-center font-semibold text-2xl mt-6 mb-4">Prayer Facility</h4>
+          <p class="text-center font-light text-xl mb-3 ">Amet consectetur. Condimentum <br> dignissim adipiscing.</p>
+        </div>
+        <div class="my-6 md:my-0 md:w-1/3 bg-[#EFEBE3] rounded-2xl py-8 ">
+          <div class="h-52 w-52 justify-self-center bg-white pt-6 rounded-full">
+          <img class="justify-self-center items-center h-40 w-40" src="image/delivery.png" alt="delivery">
+          </div>
+          <h4 class="text-center font-semibold text-2xl mt-6 mb-4">Experienced Coach</h4>
+          <p class="text-center font-light text-xl mb-3 ">Amet consectetur. Condimentum <br> dignissim adipiscing.</p>
+        </div>
+        <div class="md:w-1/3 bg-[#EFEBE3] rounded-2xl py-8">
+          <div class="h-52 w-52 justify-self-center bg-white pt-6 rounded-full">
+          <img class="justify-self-center items-center h-40 w-40" src="image/healthy.png" alt="healthy">
+          </div>
+          <h4 class="text-center font-semibold text-2xl mt-6 mb-4">Senior Player</h4>
+          <p class="text-center font-light text-xl mb-3 ">Amet consectetur. Condimentum <br> dignissim adipiscing.</p>
+        </div>
+      </div>
+     </section>
+
+
+
+ <!-- Popular Products Section design -->
+<section class="sora p-4 pb-10 max-w-sm md:max-w-screen-md md:pb-16 lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto bg-[#EFEBE3] ">
+
+        <!-- Popular Products title  -->
+      <h2 class="font-semibold text-2xl mb-8 ml-4 md:text-4xl text-left text-[#179800] md:mt-8 md:mb-5 xl:ml-28">  Popular Products</h2>
+        <!-- Populer section -->
+      <div class="w-full mx-1 xl:flex gap-5 xl:mb-24 xl:max-w-screen-xl xl:mx-auto">
+        <!-- offer section  -->
+        <div class="pt-6 mb-6 xl:mb-0 xl:relative xl:w-1/3 bg-gradient-to-tl to-[#179800] from-[#ffffff] rounded-xl">
+            <h2 class="mt-6 ml-9 xl:absolute xl:top-8 xl:left-3 font-normal text-3xl text-white">30% off</h2>
+            <p class="ml-9 my-5 text-base xl:absolute xl:top-20 xl:left-3 font-light text-zinc-500 md:text-lg">Discover a world of treats, toys, and 
+                 <br>essentials handpicked for </p>
+            <button class="ml-9 xl:absolute xl:top-40 xl:left-3 btn bg-white text-xl text-black font-bold">Buy Now</button>
+            <img class="ml-20 md:ml-96 xl:absolute bottom-0 right-0" src="image/vegetable-offer.png" alt="">
+        </div>
+
+            <!-- shoping section cart  -->
+        <div class="grid gap-2 grid-cols-2 xl:w-2/3 md:grid-cols-3 md:gap-y-5 md:gap-x-5 lg:grid-cols-3 lg:gap-y-5 lg:gap-x-5">
+          <div class="bg-[#ffffff] hidden md:flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/peyaj.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">Onion 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/tomato.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">Tomato 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/potato.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">Potato 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/potato.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">Potato 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/peyaj.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">Onion 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/tomato.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">tomato 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/peyaj.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">Onion 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/tomato.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">tomato 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+          <div class="bg-[#ffffff]  flex gap-1 h-24 md:gap-3 items-center md:h-32 rounded-xl">
+            <div>
+              <img class="h-16 ml-2 md:h-24 md:ml-4 rounded-xl" src="Image/potato.png" alt="peyaj">
+            </div>
+            <div class="">
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-sm md:text-xl text-amber-500"></i>
+                <p class="font-normal text-sm md:font-semibold"> 4.5</p>
+              </div>
+              <h4 class="font-normal text-base md:font-bold md:text-xl ">potato 1KG</h4>
+              <p class="font-normal md:font-semibold ">$39.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+    
+
+
+  <!-- Arrival & Offers Sections design -->
+     <section class="sora px-4 pt-4 pb-80 max-w-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-lg 2xl:max-w-screen-2xl mx-auto">
+
+      <!-- Arrival & Offers title  -->
+      <h2 class="font-semibold text-2xl mb-8 ml-4 md:text-4xl text-left text-[#179800] md:mt-8 md:mb-5 xl:ml-28">Arrival & Offers</h2>
+
+      <!-- Arrival & Offers Cart left  -->
+      <div class="">
+        <div class="md:px-16 xl:flex xl:justify-between xl:gap-5">
+          <div class=" flex h-48 justify-between mb-4 md:mb-6 md:h-64 xl:relative xl:size-7/12 xl:h-96 rounded-3xl bg-[#115414]">
+            <div class=" flex-row content-around  xl:absolute xl:top-16 xl:left-10">
+              <img class=" ml-3 w-28 h-10 md:ml-10 md:w-52 md:h-16 xl:w-64 xl:h-20 xl:mb-5 xl:ml-0" src="Image/dawat-logo.png" alt="dawat-logo">
+                <button class="btn ml-3  h-9 w-44 my-3 font-normal md:text-2xl md:ml-10 md:w-80 md:h-14 md:font-bold bg-[#009863] border-none xl:font-semibold xl:text-2xl text-white xl:h-14 xl:w-80 xl:mb-8 xl:ml-0">
+                  Cook Exotic Dishes</button>
+                <h3 class=" ml-3 font-bold text-2xl md:ml-10 text-white md:text-4xl md:mt-4 xl:font-bold xl:text-4xl xl:ml-0"> 
+                  <span class="text-white text-2xl xl:font-normal xl:text-4xl">
+                    UP to</span> 20% OFF</h3>
+            </div>
+            <div class=" xl:absolute xl:right-0 xl:bottom-0">
+              <img class="h-44 w-36 md:h-52 md:w-48 md:mt-10 md:mr-10 xl:h-80 xl:w-72 xl:mb-0 xl:mr-0" src="image/dawat-mock-up.png" alt="dawat-mock-up">
+            </div>
+          </div>
+          <div class=" flex h-48 justify-between md:h-64 xl:relative xl:size-5/12 xl:h-96 rounded-3xl bg-[#102861]">
+            <div class=" flex-row content-around">
+              <img class=" ml-3 w-16 h-20 md:ml-10 md:w-28 md:h-28  xl:w-20 xl:h-32 xl:-mt-16 xl:ml-4" src="Image/india-gate-logo.png" alt="">
+
+                <button class="btn ml-3 h-9 w-44 my-3 font-normal text-xs md:text-2xl md:font-bold md:ml-10 md:w-80 md:h-14  xl:text-base xl:font-normal xl:ml-4 xl:w-52 xl:h-10 bg-[#2A4D97] border-none text-white">Cook Exotic Dishes</button>
+                <h3 class=" ml-3 font-bold text-2xl md:ml-10 md:font-extrabold text-white md:text-4xl xl:text-2xl xl:mt-8 xl:ml-5"> 
+                  <span class="text-white text-2xl xl:font-normal xl:text-2xl">
+                    UP to</span> 20% OFF</h3>
+            </div>
+            <div class=" xl:right-0 xl:bottom-0">
+              <img class="h-44 w-36 md:h-52 md:w-48 md:mt-10 md:mr-10 xl:h-80 xl:mr-5" src="image/india-gate-mock-up.png" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+     </section>
+
+   </main>
+
+
+ <!-- footer styles  -->
+   <footer class="relative sora p-4  max-w-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto  bg-[#179800] ">
+            <!-- Get Grocery News! -->
+                <div class="absolute -top-60  bg-[#eee3cc] md:w-[46rem] md:h-80 md:-top-40 lg:h-[28rem] lg:-top-[14rem] md:flex md:justify-center md:content-center lg:gap-16 lg:w-[62rem] xl:w-[78rem] 2xl:w-[94rem] rounded-3xl ">
+                    <div class= "w-[22rem] justify-items-center pt-6 mb-10 ">
+                        <img class="h-44 w-64 md:w-72 md:h-64 lg:h-[24rem]"  src="image/vegetable-busket.png" alt="vegetable-busket">
+                    </div>
+                    <div class=" w-[22rem] justify-items-center md:justify-self-start  md:w-[25rem] "> 
+                      <h2 class="font-bold text-xl text-center md:justify-self-start md:font-bold md:text-4xl md:mt-10 md:mb-6 lg:mt-24">Get Grocery News!</h2>
+                      <p class="font-normal text-base text-center md:justify-self-start md:text-base md:mb-5.">Exclusive training tips, ticks, product deals and more.</p>
+                      <input class="my-5 h-10 w-72 md:h-16 md:w-80 xl:mb-10 rounded-xl " type="text" placeholder="      Enter email.......">
+                      <br>
+                      <button class="font-medium text-xl text-white justify-self-center mb-8 shadow bg-[#179800] h-11 w-44 rounded-xl md:justify-self-start">Subscribe</button>
+                    </div>
+             </div>
+
+
+
+      <div class="mt-72 md:mt-52 lg:-m-28 lg:flex lg:justify-between lg:pt-96 lg:px-36 lg:pb-36">
+          <div class=" lg:w-1/3 lg:items-center">
+            <img class="w-40 h-16" src="image/logo-footer.png" alt="logo-footer">
+            <p class="text-xl text-slate-200">Discover a world of treats, toys, and 
+              <br>essentials handpicked for your furry 
+              <br>friends</p>
+          </div>
+          <div class="lg:w-1/6">
+              <ul>
+                  <li class="text-xl font-semibold text-white">Products</li>
+                  <li class="text-xl font-semibold text-white my-8">Services</li>
+                  <li class="text-xl font-semibold text-white">Content us</li>
+              </ul>
+          </div>
+          <div class="lg:w-1/4 lg:pt-14">
+              <p class="text-xl font-semibold text-white mb-2">Follow Us</p>
+              <ul class="flex gap-6">
+                  <li><img src="image/fb.png" alt="fb"></li>
+                  <li><img src="image/google+.png" alt="google"></li>
+                  <li><img src="image/twitter.png" alt="twitter"></li>
+                  <li><img src="image/dribble.png" alt="dribble"></li>
+              </ul>
+          </div>
+      </div>
+   </footer>   
+
+</body>
+</html>
